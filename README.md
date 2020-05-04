@@ -94,4 +94,4 @@ docker run --rm --name grafana-backup-tool \
 
 
 ## Notes
-* Please have a look at the two scripts in the root directory if you need to customize something.
+* Please have a look at the two scripts in the root directory if you need to customize something

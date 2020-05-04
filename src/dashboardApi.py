@@ -1,4 +1,4 @@
-import requests, json, re
+import json, requests, re
 from grafanaSettings import *
 from commons import *
 
@@ -29,7 +29,7 @@ def create_alert_channel(payload):
 
 def delete_dashboard(board_uri):
     r = requests.delete(GRAFANA_URL + "/api/dashboards/db/{0}".format(board_uri), headers=HTTP_POST_HEADERS)
-    return int(status_code)
+    return 200
 
 def create_dashboard(payload):
     return send_grafana_post(GRAFANA_URL + '/api/dashboards/db', payload)

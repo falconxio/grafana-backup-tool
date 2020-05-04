@@ -1,7 +1,7 @@
 import os
 
-GRAFANA_URL = os.getenv('GRAFANA_URL', 'http://localhost:3000')
-TOKEN = os.getenv('GRAFANA_TOKEN', 'eyJrIjoiSkQ5NkdvWllHdnVNdlVhWUV3Tm5LSGc4NG53UFdSTjQiLCJuIjoiYWRtaW4iLCJpZCI6MX0=')
+GRAFANA_URL = os.getenv('GRAFANA_URL', 'https://grafana.falconxdev.com')
+TOKEN = os.getenv('GRAFANA_TOKEN', 'eyJrIjoiNmNlRU02aWJOZzJtZ2FwSFhpY3ZWUzdTZFk2SjRMSXAiLCJuIjoiR3JhZmFuYSBSZWFkIE9ubHkiLCJpZCI6MX0=')
 
 EXTRA_HEADERS = dict(h.split(':') for h in os.getenv('GRAFANA_HEADERS', '').split(',') if 'GRAFANA_HEADERS' in os.environ)
 

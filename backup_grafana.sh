@@ -5,7 +5,7 @@ set -e
 trap 'echo -ne "\n:::\n:::\tCaught signal, exiting at line $LINENO, while running :${BASH_COMMAND}:\n:::\n"; exit' SIGINT SIGQUIT
 
 current_path=$(pwd)
-backup_dir="_OUTPUT_"
+backup_dir="_BACKUP_"
 timestamp=$(date +"%Y-%m-%dT%H-%M-%S")
 
 [ -d "${backup_dir}" ] || mkdir -p "${backup_dir}"
